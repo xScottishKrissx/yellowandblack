@@ -1,4 +1,9 @@
 .main-content-area-wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 2rem; }
+  .main-content-area-wrapper .content-left {
+    text-align: right; }
+  .main-content-area-wrapper .content-right .article {
+    padding-top: 2rem; }
 
 /*# sourceMappingURL=main-content-area.component.css.map */
