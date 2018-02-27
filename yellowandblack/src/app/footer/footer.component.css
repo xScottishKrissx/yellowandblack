@@ -1,0 +1,9 @@
+.footer-wrapper {
+  margin: 0 auto; }
+  .footer-wrapper .footer-content {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 300px;
+    background-color: red; }
+
+/*# sourceMappingURL=footer.component.css.map */
