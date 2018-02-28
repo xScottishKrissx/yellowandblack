@@ -1,7 +1,7 @@
 .nav-wrapper{
   background-color: #ffe500;
   color: #ffe500;
-  height: 4rem;
+  height: 5rem;
   left: 0;
   max-width: 100%;
   margin: 0 auto;
@@ -9,6 +9,17 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+
+  .col{
+    span{
+        line-height: 5rem;
+    }
+    h5{
+      line-height: 5rem;
+      padding-left: 10vw;
+      font-size:1.8rem;
+    }
+  }
 }
 
 .showNavIcon{
@@ -27,6 +38,7 @@ input[type=checkbox] {
    z-index: 100001;
    position: relative;
    width: 100%;
+   min-width: 208px;
    color: black;
 }
 /* Default State */
@@ -40,9 +52,11 @@ input[type=checkbox] {
    top:-110%;
    transition: left 1s;
    width: 50vw;
+     max-width: 500px;
+     min-width: 208px;
    z-index: 10000;
 
-   transition: top 0.5s;
+   transition: top 0.2s;
 
    div{
      ul{
@@ -61,15 +75,6 @@ input[type=checkbox] {
    }
 }
 
-.col{
-  span{
-      line-height: 5rem;
-  }
-  h5{
-    line-height: 5rem;
-    padding-left: 10vw;
-  }
-}
 /* Toggled State */
 input[type=checkbox]:checked ~ .navBar {
     background: black;

@@ -4,6 +4,11 @@
     margin: 0 auto;
     width: 100%;
     min-width: 300px;
-    background-color: red; }
+    background-color: #ffe500; }
+    .footer-wrapper .footer-content div h5 {
+      color: black;
+      font-size: 2rem; }
+    .footer-wrapper .footer-content div ul li a {
+      color: black !important; }
 
 /*# sourceMappingURL=footer.component.css.map */
