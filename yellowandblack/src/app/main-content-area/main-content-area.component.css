@@ -1,9 +1,21 @@
 .main-content-area-wrapper {
   margin: 0 auto;
   padding: 2rem; }
-  .main-content-area-wrapper .content-left {
+  .main-content-area-wrapper article .content-left {
     text-align: right; }
-  .main-content-area-wrapper .content-right .article {
+    .main-content-area-wrapper article .content-left div {
+      text-align: left;
+      width: 50%; }
+      .main-content-area-wrapper article .content-left div h2 {
+        border-bottom: 1px solid #ffff00; }
+  .main-content-area-wrapper article .content-right div h1 {
+    border-bottom: 5px solid #ffff00;
+    margin: 0; }
+  .main-content-area-wrapper article .content-right .article {
     padding-top: 2rem; }
+
+@media screen and (min-width: 768px) {
+  .main-content-area-wrapper article .content-left div {
+    width: 100%; } }
 
 /*# sourceMappingURL=main-content-area.component.css.map */

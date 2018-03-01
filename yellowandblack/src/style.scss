@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+ *{ border: 1px solid black;}
+*/
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web");
+
+////@import '~sass/_variables.scss';
+//@import "sass/variables";
+//$siteYellow:#000;
+
+h1,h2,h3,h4,h4{
+  font-family: Titillium Web, sans-serif;
+}
+p,a{
+  font-family: Open Sans,sans-serif;
+  text-align: left;
+
+}
+
+.main-wrapper{
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  color: #ffff00;
+
+}
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+.main-wrapper{ max-width:760px;}
+}
+
+@media screen and (min-width: 1024px) {
+.main-wrapper{width: 100%; max-width: 1200px;}
+}
+
+@media screen and (min-width: 1920px) {
+.main-wrapper{max-width: 115rem;}
+}

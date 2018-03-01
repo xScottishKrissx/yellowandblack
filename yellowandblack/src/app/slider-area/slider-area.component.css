@@ -1,34 +1,93 @@
 .slider-area {
-  background-color: blue;
   max-width: 100%;
   margin: 0 auto;
   margin-top: 5rem; }
   .slider-area .slider {
     height: 100%;
     padding: 0; }
-    .slider-area .slider .carousel .carousel-inner .carousel-item img {
-      width: 100%; }
-    .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption {
-      right: auto;
-      left: auto; }
+    .slider-area .slider .carousel .carousel-indicators li {
+      background-color: #ffff00; }
+      .slider-area .slider .carousel .carousel-indicators li:hover {
+        cursor: pointer; }
+    .slider-area .slider .carousel .carousel-indicators .active {
+      background-color: black;
+      border: 1px solid black; }
+    .slider-area .slider .carousel .carousel-inner {
+      height: 75vh; }
+      .slider-area .slider .carousel .carousel-inner .first-slide {
+        background-image: url("/assets/shape.jpg"); }
+        .slider-area .slider .carousel .carousel-inner .first-slide div div {
+          color: black; }
+      .slider-area .slider .carousel .carousel-inner .second-slide {
+        background-image: url("/assets/flower-centre.jpeg"); }
+      .slider-area .slider .carousel .carousel-inner .third-slide {
+        background-image: url("/assets/wall.jpg"); }
+      .slider-area .slider .carousel .carousel-inner .carousel-item {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom: 1rem solid #ffff00;
+        height: 100%; }
+        .slider-area .slider .carousel .carousel-inner .carousel-item img {
+          width: 100%; }
+        .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption {
+          color: black;
+          left: 0;
+          width: 100%; }
+          .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption h1, .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption p {
+            background-color: black;
+            color: yellow; }
+          .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption .btn {
+            color: black;
+            background-color: yellow;
+            border-color: black;
+            border-radius: 0; }
+    .slider-area .slider .carousel .carousel-control-prev .carousel-control-prev-icon:hover {
+      cursor: pointer; }
   .slider-area .side-images {
     background-color: purple; }
     .slider-area .side-images .row {
       height: 100%;
-      min-height: 10rem; }
+      min-height: 55rem; }
       .slider-area .side-images .row div {
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        padding: 0; }
+        .slider-area .side-images .row div div {
+          background-color: #1616127d;
+          border-bottom: 1rem solid #ffff00;
+          bottom: auto;
+          color: #ffff00;
+          height: 100%;
+          left: 0;
+          padding-left: 5rem;
+          padding-right: 5rem;
+          padding-top: 1rem;
+          padding-bottom: 0;
+          position: relative;
+          right: auto;
+          width: 100%; }
+          .slider-area .side-images .row div div h1 {
+            margin: 0; }
       .slider-area .side-images .row .side-image-1 {
-        background-image: url("/assets/placeholder.png"); }
+        background-image: url("/assets/flower.jpeg"); }
       .slider-area .side-images .row .side-image-2 {
-        background-image: url("/assets/placeholder.png"); }
+        background-image: url("/assets/balloons.jpeg"); }
       .slider-area .side-images .row .side-image-3 {
-        background-image: url("/assets/placeholder.png"); }
+        background-image: url("/assets/tennis.jpeg"); }
 
-@media screen and (max-width: 575px) {
-  .side-images .row {
-    min-height: 15rem; } }
+@media only screen and (min-width: 575px) {
+  .slider-area .side-images .row {
+    min-height: 23rem; }
+    .slider-area .side-images .row div div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem; } }
+@media only screen and (min-width: 768px) {
+  .slider-area .side-images .row div div {
+    border-bottom: 3px solid yellow;
+    border-left: 3px solid yellow;
+    position: absolute; } }
 
 /*# sourceMappingURL=slider-area.component.css.map */

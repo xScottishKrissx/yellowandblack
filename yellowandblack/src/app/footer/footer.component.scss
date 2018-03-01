@@ -1,27 +1,45 @@
 .footer-wrapper{
   margin: 0 auto;
 
-.footer-content{
-  margin: 0 auto;
-  width: 100%;
-  min-width: 300px;
-  background-color: #ffe500;
+  .footer-content{
+    background-color: #ffff00;
+    margin: 0 auto;
+    min-width: 300px;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    width: 100%;
 
-  div{
-    h5{
-      color: black;
-      font-size: 2rem;
-    }
+    div{
+      h5{
+        color: black;
+        font-size: 2rem;
+        border-bottom: 1px solid #00000017;
+      }
 
-    ul{
-      li{
-        a{
-          color:black !important;
+      ul{
+        li{
+          a{
+            color:black !important;
+
+          }
 
         }
-
       }
     }
   }
 }
+@media only screen and (min-width: 575px) {
+  .footer-wrapper{
+    .footer-content{
+      div{
+        h5{
+          font-size: 1.4rem;
+        }
+        ul{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }

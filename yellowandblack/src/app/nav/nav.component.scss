@@ -1,6 +1,11 @@
+
+//@import '/_variables.scss';
+//@import 'src/app/sass/variables';
+//$siteYellow: green;
+
 .nav-wrapper{
-  background-color: #ffe500;
-  color: #ffe500;
+  background-color: yellow;
+  color: black;
   height: 5rem;
   left: 0;
   max-width: 100%;
@@ -61,7 +66,7 @@ input[type=checkbox] {
    div{
      ul{
        li{
-         background-color:#ffe500;
+         background-color:yellow;
          font-size: 2rem;
          line-height: 5rem;
          padding-left: 2vw;

@@ -1,5 +1,5 @@
 .slider-area{
-  background-color: blue;
+  //background-color: blue;
   max-width: 100%;
   margin: 0 auto;
   margin-top: 5rem;
@@ -10,22 +10,74 @@
       padding: 0;
 
       .carousel{
+        .carousel-indicators{
+          li{
+            background-color: #ffff00;
+            &:hover{
+              cursor: pointer;
+            }
 
+          }
+          .active{
+            background-color: black;
+            border: 1px solid black;
+          }
+        }
         .carousel-inner{
+          height: 75vh;
+
+          .first-slide{
+            background-image: url("/assets/shape.jpg");
+
+            div{
+              div{
+                color:black;
+              }
+            }
+          }
+          .second-slide{
+            background-image: url("/assets/flower-centre.jpeg");
+          }
+          .third-slide{
+            background-image: url("/assets/wall.jpg");
+          }
 
           .carousel-item{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-bottom: 1rem solid #ffff00;
+            height: 100%;
+
             img{
               width: 100%;
             }
             .container{
 
               .carousel-caption{
-                right: auto;
-                left: auto;
+                color: black;
+                left:0;
+                width: 100%;
+                //right: auto;
+                //left: auto;
+                h1,p{background-color: black; color:yellow;}
+                .btn{
+                  color:black;
+                  background-color: yellow;
+                  border-color: black;
+                  border-radius: 0;
+                }
               }
             }
           }
         }
+        .carousel-control-prev{
+          .carousel-control-prev-icon{
+            &:hover{cursor: pointer;}
+          }
+        }
+
+
       }
     }
 
@@ -34,24 +86,70 @@
 
       .row{
         height: 100%;
-        min-height: 10rem;
+        min-height: 55rem;
         div{
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+          padding: 0;
 
+
+          div{
+            background-color: #1616127d;
+            border-bottom: 1rem solid #ffff00;
+            bottom: auto;
+            color: #ffff00;
+            height: 100%;
+            left: 0;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 1rem;
+            padding-bottom: 0;
+            position: relative;
+            right: auto;
+            width: 100%;
+            h1{margin: 0;}
+          }
         }
-        .side-image-1{background-image: url("/assets/placeholder.png");}
-        .side-image-2{background-image: url("/assets/placeholder.png");}
-        .side-image-3{background-image: url("/assets/placeholder.png");}
+        .side-image-1{background-image: url("/assets/flower.jpeg");}
+        .side-image-2{background-image: url("/assets/balloons.jpeg");}
+        .side-image-3{background-image: url("/assets/tennis.jpeg");}
       }
      }
 
 }
-@media screen and (max-width: 575px) {
-.side-images{
-  .row{
-    min-height: 15rem;
+@media only screen and (min-width: 575px) {
+.slider-area{
+  .side-images{
+    .row{
+      min-height: 23rem;
+
+      div{
+
+        div{
+          padding-left: 2rem;
+          padding-right: 2rem;
+          padding-top: 1rem;
+        }
+      }
+    }
+
+  }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+.slider-area{
+  .side-images{
+    .row{
+      div{
+        div{
+          border-bottom: 3px solid yellow;
+          border-left:3px solid yellow;
+          position: absolute;
+        }
+      }
+    }
   }
 }
 }
