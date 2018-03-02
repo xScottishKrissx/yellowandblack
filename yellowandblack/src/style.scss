@@ -8,7 +8,10 @@
 ////@import '~sass/_variables.scss';
 //@import "sass/variables";
 //$siteYellow:#000;
-
+body{
+  //background-image: linear-gradient(0deg, #ffff00, #000000);
+  background-color: yellow;
+}
 h1,h2,h3,h4,h4{
   font-family: Titillium Web, sans-serif;
 }
@@ -19,6 +22,7 @@ p,a{
 }
 
 .main-wrapper{
+
   min-width: 300px;
   width: 100%;
   margin: 0 auto;
@@ -31,13 +35,19 @@ p,a{
 }
 
 @media screen and (min-width: 768px) {
-.main-wrapper{ max-width:760px;}
+.main-wrapper{width: 100%;}
 }
 
 @media screen and (min-width: 1024px) {
-.main-wrapper{width: 100%; max-width: 1200px;}
+.main-wrapper{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  max-width: 170rem;
+}
+
 }
 
 @media screen and (min-width: 1920px) {
-.main-wrapper{max-width: 115rem;}
+.main-wrapper{}
 }

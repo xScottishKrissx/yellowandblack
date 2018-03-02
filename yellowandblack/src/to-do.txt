@@ -1,0 +1,5 @@
+Optimise images
+Add Media Queries for up to 2560px wide
+Fix Side Image Paragraphs to be more central
+Make Content Area Bigger
+Fix Footer Logo

@@ -5,6 +5,7 @@
 
 .nav-wrapper{
   background-color: yellow;
+  border-bottom: 1px solid black;
   color: black;
   height: 5rem;
   left: 0;
@@ -83,7 +84,7 @@ input[type=checkbox] {
 /* Toggled State */
 input[type=checkbox]:checked ~ .navBar {
     background: black;
-    color: #ffe500;
+    color: yellow;
     top:0;
     left: 0;
 
