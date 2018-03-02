@@ -1,17 +1,24 @@
 .main-content-area-wrapper {
   margin: 0 auto;
-  padding: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
 
   article {
     .content-left {
+      background-color: yellow;
+      color:black;
       text-align: right;
+      padding: 0;
 
       div {
         text-align: left;
         width: 50%;
 
         h2 {
-          border-bottom: 1px solid #ffff00;
+          border-bottom: 1px solid black;
+
         }
       }
     }
@@ -26,12 +33,29 @@
 
       .article {
         padding-top: 2rem;
+        padding-bottom: 2rem;
       }
     }
   }
 }
+@media screen and (min-width: 575px) {
+  .main-content-area-wrapper{
+    article{
+      .content-right{
+        .article{
+          p{
+            font-size: 1.5rem;
+          }
+
+        }
+      }
+    }
+
+  }
+}
 @media screen and (min-width: 768px) {
   .main-content-area-wrapper {
+    min-height: 700px;
     article {
 
       .content-left {
@@ -40,6 +64,40 @@
           width: 100%;
         }
 
+      }
+
+      .content-right{
+        padding-top:2rem;
+        div{
+          h1{
+            font-size: 5rem;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content-area-wrapper{
+    article{
+      .content-right{
+        .article{
+          p{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-content-area-wrapper{
+    article{
+      .content-left{
+        max-width: 36rem;
       }
     }
   }

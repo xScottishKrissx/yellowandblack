@@ -6,19 +6,38 @@
     min-width: 300px;
     padding-bottom: 2rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 2rem;
     width: 100%; }
-    .footer-wrapper .footer-content div h5 {
-      color: black;
-      font-size: 2rem;
-      border-bottom: 1px solid #00000017; }
-    .footer-wrapper .footer-content div ul li a {
-      color: black !important; }
+    .footer-wrapper .footer-content div {
+      padding: 0.5rem;
+      text-align: center; }
+      .footer-wrapper .footer-content div h5 {
+        background-color: black;
+        color: yellow;
+        font-size: 2rem;
+        border-bottom: 1px solid #00000017;
+        text-align: center; }
+      .footer-wrapper .footer-content div ul li a {
+        color: black !important; }
+    .footer-wrapper .footer-content .footer-col-3 {
+            /*
+background-image: url("/assets/tennis.jpeg");
+background-size: cover;
+min-height: 14rem;
+*/ }
+      .footer-wrapper .footer-content .footer-col-3 img {
+        max-height: 120px;
+        width: 120px; }
 
 @media only screen and (min-width: 575px) {
   .footer-wrapper .footer-content div h5 {
-    font-size: 1.4rem; }
+    font-size: 2rem; }
   .footer-wrapper .footer-content div ul {
-    font-size: 1.2rem; } }
+    font-size: 1.5rem; } }
+@media only screen and (min-width: 1024px) {
+  .footer-wrapper {
+    border-left: 2px solid black;
+    border-right: 2px solid black; } }
 
 /*# sourceMappingURL=footer.component.css.map */

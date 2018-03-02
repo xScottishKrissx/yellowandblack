@@ -13,13 +13,13 @@
       background-color: black;
       border: 1px solid black; }
     .slider-area .slider .carousel .carousel-inner {
-      height: 75vh; }
+      height: 87vh; }
       .slider-area .slider .carousel .carousel-inner .first-slide {
         background-image: url("/assets/shape.jpg"); }
         .slider-area .slider .carousel .carousel-inner .first-slide div div {
           color: black; }
       .slider-area .slider .carousel .carousel-inner .second-slide {
-        background-image: url("/assets/flower-centre.jpeg"); }
+        background-image: url("/assets/flower-centre.jpg"); }
       .slider-area .slider .carousel .carousel-inner .third-slide {
         background-image: url("/assets/wall.jpg"); }
       .slider-area .slider .carousel .carousel-inner .carousel-item {
@@ -36,7 +36,8 @@
           width: 100%; }
           .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption h1, .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption p {
             background-color: black;
-            color: yellow; }
+            color: yellow;
+            padding-left: 2rem; }
           .slider-area .slider .carousel .carousel-inner .carousel-item .container .carousel-caption .btn {
             color: black;
             background-color: yellow;
@@ -61,8 +62,8 @@
           color: #ffff00;
           height: 100%;
           left: 0;
-          padding-left: 5rem;
-          padding-right: 5rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
           padding-top: 1rem;
           padding-bottom: 0;
           position: relative;
@@ -71,13 +72,20 @@
           .slider-area .side-images .row div div h1 {
             margin: 0; }
       .slider-area .side-images .row .side-image-1 {
-        background-image: url("/assets/flower.jpeg"); }
+        background-image: url("/assets/flower.jpg"); }
       .slider-area .side-images .row .side-image-2 {
-        background-image: url("/assets/balloons.jpeg"); }
+        background-image: url("/assets/balloons.jpg"); }
       .slider-area .side-images .row .side-image-3 {
-        background-image: url("/assets/tennis.jpeg"); }
+        background-image: url("/assets/tennis.jpg"); }
 
+@media only screen and (max-width: 575px) {
+  .slider-area .slider .carousel .carousel-inner {
+    height: 95vh; } }
 @media only screen and (min-width: 575px) {
+  .slider-area .slider .carousel .carousel-inner {
+    max-height: 1000px;
+    min-height: 718px;
+    height: 85vh; }
   .slider-area .side-images .row {
     min-height: 23rem; }
     .slider-area .side-images .row div div {
@@ -88,6 +96,42 @@
   .slider-area .side-images .row div div {
     border-bottom: 3px solid yellow;
     border-left: 3px solid yellow;
-    position: absolute; } }
+    position: absolute; }
+    .slider-area .side-images .row div div h1 {
+      padding-top: 3rem; } }
+@media only screen and (min-width: 1024px) {
+  .slider-area .slider .carousel .carousel-item div .carousel-caption h1, .slider-area .slider .carousel .carousel-item div .carousel-caption p {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .slider-area .slider .carousel .carousel-item div .carousel-caption h1 {
+    font-size: 5rem; }
+  .slider-area .slider .carousel .carousel-item div .carousel-caption p {
+    font-size: 2.5rem; }
+  .slider-area .side-images .row div div h1, .slider-area .side-images .row div div p {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .slider-area .side-images .row div div h1 {
+    font-size: 3.5rem;
+    padding-top: 0; }
+  .slider-area .side-images .row div div p {
+    font-size: 1.5rem; } }
+@media only screen and (min-width: 1920px) {
+  .slider-area .slider .carousel .carousel-inner {
+    height: 95vh;
+    max-height: none; }
+  .slider-area .slider .carousel .carousel-item div .carousel-caption h1, .slider-area .slider .carousel .carousel-item div .carousel-caption p {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .slider-area .slider .carousel .carousel-item div .carousel-caption h1 {
+    font-size: 8rem; }
+  .slider-area .slider .carousel .carousel-item div .carousel-caption p {
+    font-size: 4rem;
+    padding: 2rem; }
+  .slider-area .side-images .row div div h1 {
+    font-size: 5rem;
+    padding-top: 0;
+    padding-bottom: 2rem; }
+  .slider-area .side-images .row div div p {
+    font-size: 2.5rem; } }
 
 /*# sourceMappingURL=slider-area.component.css.map */
