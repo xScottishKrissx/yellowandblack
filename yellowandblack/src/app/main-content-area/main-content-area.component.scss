@@ -6,6 +6,9 @@
   padding-right: 2rem;
 
   article {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
     .content-left {
       background-color: yellow;
       color:black;
@@ -14,17 +17,33 @@
 
       div {
         text-align: left;
-        width: 50%;
+        padding-bottom: 1rem;
+        padding-top:1rem;
+        //width: 50%;
 
-        h2 {
-          border-bottom: 1px solid black;
+        .authorDetails{
+          padding-left: 2rem;
+          img{
+            width: 100px;
+            padding-bottom: 1rem;
+          }
 
+          h2 {
+            border-bottom: 1px solid black;
+          }
+        }
+
+        .socialMedia{
+          padding-left: 2rem;
+          img{width: 50px;}
         }
       }
     }
 
     .content-right {
+      padding: 0;
       div {
+        padding: 0;
         h1 {
           border-bottom: 5px solid #ffff00;
           margin: 0;
@@ -32,6 +51,8 @@
       }
 
       .article {
+        padding-left: 0;
+        padding-right: 0;
         padding-top: 2rem;
         padding-bottom: 2rem;
       }
@@ -68,6 +89,8 @@
 
       .content-right{
         padding-top:2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         div{
           h1{
             font-size: 5rem;

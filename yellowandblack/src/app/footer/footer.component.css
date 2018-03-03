@@ -21,11 +21,11 @@
       .footer-wrapper .footer-content div ul li a {
         color: black !important; }
     .footer-wrapper .footer-content .footer-col-3 {
-            /*
-background-image: url("/assets/tennis.jpeg");
-background-size: cover;
-min-height: 14rem;
-*/ }
+      background-image: url("/assets/logo1.png");
+      background-size: contain;
+      background-position: center;
+      height: 100%;
+      background-repeat: no-repeat; }
       .footer-wrapper .footer-content .footer-col-3 img {
         max-height: 120px;
         width: 120px; }
