@@ -2,12 +2,25 @@
 //@import '/_variables.scss';
 //@import 'src/app/sass/variables';
 //$siteYellow: green;
+@mixin background-imageSetting {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+@mixin blackLogo {
+  background-image: url("/assets/logo1.png");
+}
+@mixin yellowLogo {
+  background-image: url("/assets/logo-yellow.png");
+}
+
 
 .nav-wrapper{
   background-color: yellow;
   border-bottom: 1px solid black;
   color: black;
-  height: 5rem;
+  height: 10rem;
   left: 0;
   max-width: 100%;
   margin: 0 auto;
@@ -17,20 +30,26 @@
   z-index: 1000;
 
   .col{
-    span{
+    cursor: pointer;
+    .showNavIcon{
+
+        font-size: 3rem;
+        float: left;
         line-height: 5rem;
     }
-    h5{
-      line-height: 5rem;
-      padding-left: 10vw;
-      font-size:1.8rem;
+
+    .header-logo{
+        @include background-imageSetting;
+        @include blackLogo;
+    }
+    .header-logo-yellow{
+        @include background-imageSetting;
+        @include yellowLogo;
     }
   }
 }
 
-.showNavIcon{
-  float: left;
-}
+
 input[type=checkbox] {
    left: 0;
    opacity: 0;
@@ -73,8 +92,22 @@ input[type=checkbox] {
          padding-left: 2vw;
          margin-bottom: 1rem;
 
+         &:hover{
+           background-color: black;
+           a{
+             border-left: 5px solid yellow;
+             color: yellow;
+             text-decoration: none;
+             margin-left: 10px;
+           }
+         }
+
          a{
+           border-left: 1px solid black;
            color: black;
+           padding-left: 5px;
+           transition: margin .5s;
+           transition: border .5s;
          }
        }
      }
@@ -87,6 +120,7 @@ input[type=checkbox]:checked ~ .navBar {
     color: yellow;
     top:0;
     left: 0;
+
 
 }
 input[type=checkbox]:checked ~ #showNavLabel{
