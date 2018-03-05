@@ -18,6 +18,11 @@
         font-size: 2rem;
         border-bottom: 1px solid #00000017;
         text-align: center; }
+      .footer-wrapper .footer-content div ul li:hover {
+        background-color: black; }
+      .footer-wrapper .footer-content div ul li:hover a {
+        color: yellow !important;
+        text-decoration: none; }
       .footer-wrapper .footer-content div ul li a {
         color: black !important; }
     .footer-wrapper .footer-content .footer-col-3 {

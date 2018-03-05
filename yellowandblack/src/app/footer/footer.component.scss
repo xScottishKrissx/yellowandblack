@@ -24,6 +24,13 @@
 
       ul{
         li{
+          &:hover{
+            background-color: black;
+          }
+          &:hover a{
+            color:yellow !important;
+            text-decoration: none;
+          }
           a{
             color:black !important;
 

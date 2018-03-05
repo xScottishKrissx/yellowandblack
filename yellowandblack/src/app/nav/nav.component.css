@@ -142,11 +142,12 @@ input[type=checkbox] {
         color: yellow;
         margin-bottom: 1rem;
         padding: 0;
-        white-space: normal; }
+        white-space: normal;
+        transition: border 1s; }
         .navBar div .dropdown .dropdown-menu .dropdown-item:hover {
-          background-color: black;
-          border-left: 1px solid yellow;
-          color: yellow; }
+          background-color: yellow;
+          border-left: 5px solid black;
+          color: black; }
 
 /* Toggled State */
 input[type=checkbox]:checked ~ .navBar {
@@ -166,6 +167,31 @@ input[type=checkbox]:checked ~ #showNavLabel {
     left: 46rem !important;
     position: fixed !important;
     top: 50rem !important;
-    z-index: -1000; } }
+    z-index: -1000; }
+    .navBar div .dropdown .dropdown-menu .dropdown-item {
+      font-size: 3rem; } }
+@media screen and (min-height: 923px) {
+  .navBar div .dropdown .dropdown-menu {
+    top: 5.4rem !important; } }
+@media screen and (min-width: 380px) and (max-width: 1024px) and (min-height: 923px) {
+  .navBar div .dropdown .dropdown-menu {
+    top: -40.6rem !important; } }
+@media screen and (min-width: 2560px) {
+  .navBar {
+    max-width: none;
+    width: 1220px; }
+    .navBar div ul li {
+      font-size: 5rem;
+      line-height: 10rem; }
+    .navBar div .dropdown .btn-secondary {
+      font-size: 4rem; }
+    .navBar div .dropdown .dropdown-menu {
+      left: 0 !important;
+      position: relative !important;
+      top: 0rem !important;
+      transform: none !important;
+      z-index: -1000; }
+      .navBar div .dropdown .dropdown-menu .dropdown-item {
+        font-size: 4rem; } }
 
 /*# sourceMappingURL=nav.component.css.map */

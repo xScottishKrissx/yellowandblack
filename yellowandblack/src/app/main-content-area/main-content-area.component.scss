@@ -1,9 +1,6 @@
 .main-content-area-wrapper {
   margin: 0 auto;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-top: 2rem;
-  padding-right: 2rem;
+  padding: 2rem;
 
   article {
     padding-left: 2rem;
@@ -11,19 +8,19 @@
 
     .content-left {
       background-color: yellow;
-      color:black;
+      color: black;
       text-align: right;
       padding: 0;
 
       div {
         text-align: left;
         padding-bottom: 1rem;
-        padding-top:1rem;
+        padding-top: 1rem;
         //width: 50%;
-
-        .authorDetails{
+        .authorDetails {
           padding-left: 2rem;
-          img{
+
+          img {
             width: 100px;
             padding-bottom: 1rem;
           }
@@ -33,17 +30,22 @@
           }
         }
 
-        .socialMedia{
+        .socialMedia {
           padding-left: 2rem;
-          img{width: 50px;}
+
+          img {
+            width: 50px;
+          }
         }
       }
     }
 
     .content-right {
       padding: 0;
+
       div {
         padding: 0;
+
         h1 {
           border-bottom: 5px solid #ffff00;
           margin: 0;
@@ -51,63 +53,57 @@
       }
 
       .article {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem 0;
       }
     }
   }
 }
 @media screen and (min-width: 575px) {
-  .main-content-area-wrapper{
-    article{
-      .content-right{
-        .article{
-          p{
+  .main-content-area-wrapper {
+    article {
+      .content-right {
+        .article {
+          p {
             font-size: 1.5rem;
           }
-
         }
       }
     }
-
   }
 }
 @media screen and (min-width: 768px) {
   .main-content-area-wrapper {
     min-height: 700px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
     article {
-
       .content-left {
-
         div {
           width: 100%;
         }
-
       }
 
-      .content-right{
-        padding-top:2rem;
+      .content-right {
+        padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
-        div{
-          h1{
+
+        div {
+          h1 {
             font-size: 5rem;
           }
         }
       }
-
     }
   }
 }
-
 @media screen and (min-width: 1024px) {
-  .main-content-area-wrapper{
-    article{
-      .content-right{
-        .article{
-          p{
+  .main-content-area-wrapper {
+    article {
+      .content-right {
+        .article {
+          p {
             font-size: 2rem;
           }
         }
@@ -115,11 +111,10 @@
     }
   }
 }
-
 @media screen and (min-width: 1920px) {
-  .main-content-area-wrapper{
-    article{
-      .content-left{
+  .main-content-area-wrapper {
+    article {
+      .content-left {
         max-width: 36rem;
       }
     }
