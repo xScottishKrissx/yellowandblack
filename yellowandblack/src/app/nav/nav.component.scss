@@ -111,6 +111,89 @@ input[type=checkbox] {
          }
        }
      }
+
+     .dropdown{
+       background-color:yellow;
+       font-size: 2rem;
+       line-height: 5rem;
+       padding-left: 2vw;
+       margin-bottom: 1rem;
+
+       .btn-secondary{
+         background-color: yellow;
+         border: none;
+         border-left: 1px solid black;
+         color: black;
+         font-size: 2rem;
+         text-align: left;
+         outline: none;
+         width: 100%;
+         &:focus{
+           outline: none;
+           box-shadow: none;
+         }
+       }
+
+       .dropdown-menu{
+         background-color: black;
+         border:none;
+         border-radius: 0;
+         font-size: 1.3rem;
+         height: 41rem;
+         left: 18rem !important;
+         padding: 0;
+         padding-left: 0.6rem;
+         position: absolute !important;
+         top:4.2rem !important;
+         width: 84%;
+          //min-width: 17.8rem;
+
+         .dropdown-item{
+           border-left: 1px solid yellow;
+           color: yellow;
+           margin-bottom: 1rem;
+           padding: 0;
+           white-space: normal;
+
+           &:hover{
+             background-color: black;
+             border-left: 1px solid yellow;
+             color: yellow;
+           }
+         }
+       }
+
+       /*
+       .dropdown-menu{
+         background-color: black;
+         border:none;
+         border-radius: 0;
+         height: 41rem;
+         left: 0rem !important;
+         padding-left: 52rem;
+         position: fixed !important;
+         top:50rem !important;
+         width: 100%;
+         z-index: -1000;
+          //min-width: 17.8rem;
+
+         .dropdown-item{
+           border-left: 1px solid yellow;
+           color: yellow;
+           margin-bottom: 1rem;
+           padding: 0;
+           white-space: normal;
+
+           &:hover{
+             background-color: black;
+             border-left: 1px solid yellow;
+             color: yellow;
+           }
+         }
+       }
+*/
+
+     }
    }
 }
 
@@ -126,12 +209,36 @@ input[type=checkbox]:checked ~ .navBar {
 input[type=checkbox]:checked ~ #showNavLabel{
   opacity: 0;
 }
-
+@media screen and (min-width: 575px) {
+.navBar{
+  div{
+    .dropdown{
+      .dropdown-menu{
+      //  font-size: 2rem;
+      left:45vw !important;
+      }
+    }
+  }
+}
+}
 
 @media screen and (min-width: 768px) {
 
 }
 
 @media screen and (min-width: 1024px) {
-
+  .navBar{
+    div{
+      .dropdown{
+        .dropdown-menu{
+        //  font-size: 2rem;
+        //  left:45vw !important;
+        left: 46rem !important;
+    position: fixed !important;
+    top: 50rem !important;
+    z-index: -1000;
+        }
+      }
+    }
+  }
 }

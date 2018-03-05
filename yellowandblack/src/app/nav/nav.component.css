@@ -78,6 +78,75 @@ input[type=checkbox] {
       padding-left: 5px;
       transition: margin .5s;
       transition: border .5s; }
+  .navBar div .dropdown {
+    background-color: yellow;
+    font-size: 2rem;
+    line-height: 5rem;
+    padding-left: 2vw;
+    margin-bottom: 1rem;
+       /*
+       .dropdown-menu{
+         background-color: black;
+         border:none;
+         border-radius: 0;
+         height: 41rem;
+         left: 0rem !important;
+         padding-left: 52rem;
+         position: fixed !important;
+         top:50rem !important;
+         width: 100%;
+         z-index: -1000;
+          //min-width: 17.8rem;
+
+         .dropdown-item{
+           border-left: 1px solid yellow;
+           color: yellow;
+           margin-bottom: 1rem;
+           padding: 0;
+           white-space: normal;
+
+           &:hover{
+             background-color: black;
+             border-left: 1px solid yellow;
+             color: yellow;
+           }
+         }
+       }
+*/ }
+    .navBar div .dropdown .btn-secondary {
+      background-color: yellow;
+      border: none;
+      border-left: 1px solid black;
+      color: black;
+      font-size: 2rem;
+      text-align: left;
+      outline: none;
+      width: 100%; }
+      .navBar div .dropdown .btn-secondary:focus {
+        outline: none;
+        box-shadow: none; }
+    .navBar div .dropdown .dropdown-menu {
+      background-color: black;
+      border: none;
+      border-radius: 0;
+      font-size: 1.3rem;
+      height: 41rem;
+      left: 18rem !important;
+      padding: 0;
+      padding-left: 0.6rem;
+      position: absolute !important;
+      top: 4.2rem !important;
+      width: 84%; }
+      .navBar div .dropdown .dropdown-menu .dropdown-item {
+        border-left: 1px solid yellow;
+        color: yellow;
+        margin-bottom: 1rem;
+        padding: 0;
+        white-space: normal; }
+        .navBar div .dropdown .dropdown-menu .dropdown-item:hover {
+          background-color: black;
+          border-left: 1px solid yellow;
+          color: yellow; }
 
 /* Toggled State */
 input[type=checkbox]:checked ~ .navBar {
@@ -88,5 +157,15 @@ input[type=checkbox]:checked ~ .navBar {
 
 input[type=checkbox]:checked ~ #showNavLabel {
   opacity: 0; }
+
+@media screen and (min-width: 575px) {
+  .navBar div .dropdown .dropdown-menu {
+    left: 45vw !important; } }
+@media screen and (min-width: 1024px) {
+  .navBar div .dropdown .dropdown-menu {
+    left: 46rem !important;
+    position: fixed !important;
+    top: 50rem !important;
+    z-index: -1000; } }
 
 /*# sourceMappingURL=nav.component.css.map */

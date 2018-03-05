@@ -132,6 +132,8 @@
           right: auto;
           width: 100%;
 
+          transition: background-color .5s;
+
           &:hover{
             background-color: #000000cc;
             color: yellow;

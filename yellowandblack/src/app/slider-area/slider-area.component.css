@@ -75,7 +75,8 @@
           padding: 1rem 2rem 0;
           position: relative;
           right: auto;
-          width: 100%; }
+          width: 100%;
+          transition: background-color .5s; }
           .slider-area .side-images .row div div:hover {
             background-color: #000000cc;
             color: yellow;
